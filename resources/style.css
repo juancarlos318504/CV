@@ -1,0 +1,552 @@
+
+:root{
+    /*-----------colores-----------*/
+    --bg_color: black;
+    --second_color: #ffc107;
+    --tittle_color:  #fff;
+    --text_color: #999999;
+    --progress_bar_color: #1A1A1A; 
+    --menu_area_color:  #fff;
+    --subtitle_color:  #fff;
+    --second_subtitle_color: #ffc107;
+    /*-----------colores-----------*/
+
+    /*-----------fuentes-----------*/
+    --header_font: Verdana, Geneva, Tahoma, sans-serif;
+    --title_font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --subtitle_font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --text_font: poppins,Arial,sans-serif;
+    /*-----------fuentes-----------*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+}
+
+/*-------------- propiedades del header --------------*/
+.o-menu{
+    margin-bottom: 4rem;
+    padding: 1rem 1rem 1rem 1rem;
+    max-width: 65%;
+    max-height: 5rem;
+    background: none;
+    display: flex;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+.o-menu_options{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+    transition: all 1s ease;
+}
+
+.o-menu_icon{
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.o-logo{
+    height: 4em;
+    float: left;
+    transition: all 1s ease;
+}
+
+.o-menu_option{
+    color: var(--tittle_color);
+    font-family: var(--header_font);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 1s ease;
+}
+
+.o-menu_option:hover{
+    transition: all 0.5s ease;
+    color: var(--second_subtitle_color);
+}
+
+.sticky{
+    background-color: var(--bg_color);
+    align-self: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 3rem;
+    border-radius: 1rem;
+}
+
+.sticky + .content{
+    padding-top: 2rem;
+}
+/*-------------- propiedades del header --------------*/
+
+
+/*-------------- propiedades de la seccion 1 --------------*/
+.o-container{
+    background-color: var(--bg_color);
+    max-width: 100%;
+    padding: 0rem 8rem 3rem 8rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease;
+}
+
+.o-container#home_container{
+    background-image: url("images/section_1_bg.png");
+    background-size: cover;
+    transition: all 1s ease;
+}
+
+.o-content_section1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: all 1s ease;
+}
+
+.o-hi{
+    color: var(--tittle_color);
+    font-family: var(--text_font);
+    font-size: 1em;
+    font-weight: 100;
+    transition: all 1s ease;
+}
+
+#presentation{
+    display: flex;
+    margin-bottom: 3rem;
+    transition: all 1s ease;
+}
+
+.o-title span{
+    color: var(--second_subtitle_color);
+    font-family: var(--title_font);  
+}
+
+.o-title{
+    color: var(--tittle_color);
+    font-family: var(--title_font);
+    font-size: 3.3em;
+    transition: all 1s ease;
+}
+
+.o-text{
+    color: var(--text_color);
+    font-family: var(--text_font);
+    font-size: 1.3rem;
+    transition: all 1s ease;
+}
+
+.o-second_subtitle{
+    font-family: var(--subtitle_color);
+    color: var(--second_subtitle_color);
+    font-size: 2rem;
+    transition: all 1s ease;
+}
+
+.o-my_img{
+    max-height: 22em;
+    margin-right: 8em;
+    transition: all 1s ease;
+}
+
+.o-contact_container{
+    margin-top: -2.3em;  
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-width: 70%;
+    transition: all 1s ease;
+}
+
+.o-contact_menu{
+    background-color: var(--menu_area_color); 
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-wrap: nowrap;
+    border: 1px solid #ccc;
+    border-radius: 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: 100%;
+    min-height: 5rem;
+    max-height: 7rem;
+    transition: all 1s ease;
+}
+
+.o-contact_icon{
+    max-height: 3em;
+    transition: all 1s ease;
+}
+/*-------------- propiedades de la seccion 1 --------------*/
+
+
+/*-------------- propiedades de la seccion 2 acerca de mi--------------*/
+.o-content_section2{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.o-content_section1#info_about{
+    max-width: 50%;
+}
+/*-------------- propiedades de la seccion 2 acerca de mi --------------*/
+
+
+/*-------------- propiedades de la seccion 3 mis habilidades --------------*/
+.o-title_description{
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.o-text#skills_description{
+    font-size: 1rem;
+    max-width: 70%;
+    text-align: center;
+}
+
+.progressbar{
+    background-color: var(--progress_bar_color);
+    border-radius: 1em;
+    padding: 0.1em;
+    margin-bottom: 5rem;
+}
+
+.progressbar>div{
+    background-color: orange;
+    height: 1rem;
+    border-radius: 1.3em;    
+}
+
+.o-skill_text{
+    color: var(--subtitle_color);
+    font-family: var(--text_font);
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-top: -1.8rem;
+    transition: all 1s ease;
+}
+
+
+.content_progress_bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.o-container_graph{
+    width: 45%;
+}
+/*-------------- propiedades de la seccion 3 mis habilidades --------------*/
+
+
+/*-------------- propiedades de la seccion 4 mis competencias --------------*/
+.o-text#comp_description{
+    font-size: 1rem;
+    max-width: 70%;
+    text-align: center;
+}
+
+.o-content_section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#graphics_section4{
+    width: 80%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.o-container_comp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.o-container_comp#container_programs{
+    width: 50%;
+}
+
+.o-container_box{
+    background-color: var(--progress_bar_color);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0.5rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.o-program_icon{
+    max-height: 3em;
+    transition: all 1s ease;
+    margin: 1rem;
+}
+
+.o-container_line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.o-comp_text{
+    color: var(--subtitle_color);
+    font-family: var(--text_font);
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 1s ease;
+    width: 100%;
+}
+
+.o-line_text{
+    background-color: var(--second_color);
+    width: 2rem;
+    height: 0.12rem;
+    margin-top: 0.2rem;
+    border-radius: 0.1em;
+}
+/*-------------- propiedades de la seccion 4 mis competencias --------------*/
+
+
+
+/*-------------- Responsive medio sección 1 --------------*/
+
+@media (max-width: 1220px){
+    /*-------------- Sección 1 --------------*/
+    .o-menu{
+        min-width: 80%;
+    }
+
+    .o-menu_options{
+        width: 100%;
+        justify-content: space-around;
+        float: none;
+    }
+
+    .o-menu_option{
+        font-size: 1rem;
+    }
+
+    .o-logo{
+        height: 3.5em;
+    }
+
+    .o-container{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .o-container#home_container{
+        background-image: var(--bg_color);
+    }
+
+    .o-content_section1{
+        justify-content: center;
+    }
+
+    .o-title{
+        font-size: 3em;
+    }
+
+    .o-text{
+        font-size: 1rem;
+    }
+
+    .o-my_img{
+        max-height: 15rem;
+        margin-right: 0rem;
+    }
+
+    .o-second_subtitle{
+        font-size: 1.5rem;
+    }
+
+    .o-contact_menu{
+        min-height: 3rem;
+        max-height: 5rem;
+    }
+
+    .o-contact_icon{
+        max-height: 2.3em;
+    }
+    /*-------------- Sección 1 --------------*/
+
+    /*-------------- Sección 2 --------------*/
+    .o-content_section2{
+        padding-top: 3rem;
+        width: 80%;
+    }
+
+    .o-content_section1#info_about{
+        justify-content: flex-start;
+    }
+    /*-------------- Sección 2 --------------*/
+
+
+    /*-------------- Sección 3 --------------*/
+    .o-skill_text{
+        font-size: 1rem;
+    }
+    /*-------------- Sección 3 --------------*/
+
+    /*-------------- Sección 4 --------------*/
+    .o-comp_text{
+        font-size: 0.8em;
+    }
+    /*-------------- Sección 4 --------------*/
+
+}
+
+
+
+/*-------------- Respondive medio sección 1 --------------*/
+
+/*-------------- Respondive movil --------------*/
+@media (max-width: 890px){
+    /*-------------- Sección 1 --------------*/
+    .o-content_section1{
+        margin-top: 3rem;
+    }
+    .o-menu{
+        display: none;
+    }
+    .o-menu_option{
+        font-size: 0.8rem;
+        text-align: center;
+
+    }
+
+    .o-logo{
+        height: 3em;
+    }
+
+    .o-container{
+        flex-wrap: wrap;
+    }
+
+    .o-content_section1{
+        text-align: center;
+    }
+
+    #presentation{
+        margin-bottom: 1rem;
+    }
+
+    .o-my_img{
+        margin-top: 1rem;
+    }
+
+    #presentation{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .o-contact_container{
+        margin-top: 0em;  
+        text-align: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .o-contact_icon{
+        max-height: 1.8em;
+    }
+    /*-------------- Sección 1 --------------*/
+
+    /*-------------- Sección 2 --------------*/
+    .o-content_section2{
+        flex-direction: column;
+        padding-top: 0rem;
+    }
+
+    .o-content_section1#info_about{
+        min-width: 100%;
+        justify-content: center;
+    }
+    /*-------------- Sección 2 --------------*/
+
+
+    /*-------------- Sección 3 --------------*/
+    .o-text#skills_description{
+        font-size: 0.8rem;
+        min-width: 100%;
+    }
+
+    .content_progress_bar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .o-skill_text{
+        margin-top: -1.5rem;
+    }
+
+    .progressbar{
+        margin-bottom: 3.5rem;
+    }
+
+    .o-container_graph{
+        width: 100%;
+    }
+    /*-------------- Sección 3 --------------*/
+
+    /*-------------- Sección 4 --------------*/
+    .o-text#comp_description{
+        font-size: 0.8rem;
+        min-width: 100%;
+    }
+
+    #graphics_section4{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .o-container_comp{ 
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+    
+    .o-container_comp#container_programs{
+        width: 90%;
+    }
+    /*-------------- Sección 4 --------------*/
+}
+/*-------------- Respondive movil --------------*/
+
+
